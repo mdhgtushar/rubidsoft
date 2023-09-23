@@ -13,7 +13,7 @@
   <body>
     <div>
       <div>
-        <div class="fixed p-5 w-screen bottom-0">
+        <div class="fixed p-5 w-screen bottom-0 bg-gray-100">
           <div class="container mx-auto flex justify-between">
             <div class=""><p>Rubidsoft - All Rights Reserved</p></div>
             <div class="nav1right"><a class="fl-r" href="/admin">Admin</a></div>
@@ -22,20 +22,27 @@
         <div class="bg-gray-100 p-2 border-b">
           <div class="container mx-auto flex justify-between">
             <div class="">
-              <p>
+              <p class="md:inline">
                 <b>Email:</b>
-                <a class="text-green-600" href="mailto:email@gmail.com">email@gmail.com</a
-                ><b> Phone:</b>
+                <a class="text-green-600" href="mailto:email@gmail.com">email@gmail.com</a>
+              </p>
+              <p class="md:inline">
+                <b> Phone:</b>
                 <a class="text-green-600" href="tel:email@gmail.com">+8801302855453</a>
               </p>
             </div>
-            <div class="nav1right"><a class="fl-r" href="/ ">Developers Team</a></div>
+            <div class="nav1right md:block hidden">
+              <a class="fl-r" href="/ ">Developers Team</a>
+            </div>
           </div>
         </div>
         <div class="border-b border-t-0">
           <section class="container flex justify-between items-center mx-auto py-2">
             <div class="left">
-              <div class="logo">
+              <div class="logo flex">
+                <button onclick="sidebar()" class="md:hidden">
+                  <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+                </button>
                 <img
                   src="data:image/jpeg;base64,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"
                   alt=""
@@ -43,7 +50,7 @@
               </div>
               <div class="hotline"></div>
             </div>
-            <div class="flex">
+            <div class="flex hidden md:block">
               <div class="flex flex-col justify-center items-center p-2 mr-2">
                 <img class="w-16" src="http://www.01soft.com.bd/assets/img/top5.png" alt="" /><a
                   class="text-sm"
@@ -61,7 +68,7 @@
             </div>
           </section>
         </div>
-        <div class="bg-gray-100 border-b">
+        <div class="bg-gray-100 border-b hidden md:block">
           <section class="container mx-auto">
             <div class="menus">
               <b
@@ -79,8 +86,77 @@
           <section></section>
         </div>
       </div>
-      <section class="container flex justify-between mx-auto">
-        <div class="w-64">
+
+      <div
+        class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
+        id="sidebar"
+        style="display: none"
+      >
+        <div class="w-full bg-gray-100 shadow p-2">
+          <div class="flex items-center">
+            <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <a href="/">
+              <h1 class="text-2xl font-semibold"><b>RubidSoft</b></h1></a
+            >
+          </div>
+        </div>
+        <ul class="m-0 w-96">
+          <li>
+            <a
+              href="index.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            >
+              <i class="fa fa-id-card-o mr-3" aria-hidden="true"></i> About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="skills.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-graduation-cap mr-3" aria-hidden="true"></i> Skills & Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-briefcase mr-3" aria-hidden="true"></i> Work & Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i> Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-picture-o mr-3" aria-hidden="true"></i> Photo Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="timeline.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Time Line</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-coffee mr-3" aria-hidden="true"></i> Contact Details</a
+            >
+          </li>
+        </ul>
+      </div>
+      <section class="container md:flex justify-between mx-auto p-2">
+        <div class="md:w-64">
           <div class="pt-5 border my-5">
             <div class="bg-gray-100 p-2 px-5 font-bold"><h3>News &amp; Update</h3></div>
             <div class="">
@@ -106,10 +182,10 @@
             </div>
           </div>
         </div>
-        <div class="flex-1 px-5 my-5">
+        <div class="flex-1 md:px-5 my-5">
           <div>
             <div class="bg-gray-100 p-2 px-5 font-bold mb-5"><h3>Latest Completed Works:</h3></div>
-            <div class="grid grid-cols-2 gap-4 mb-5">
+            <div class="md:grid grid-cols-2 gap-4 mb-5">
               <div class="w-full border border-gray-200">
                 <div class="flex items-center p-5">
                   <img
@@ -220,7 +296,7 @@
             </div>
           </div>
         </div>
-        <div class="w-64">
+        <div class="md:w-64">
           <div class="pt-5 border my-5">
             <div class="bg-gray-100 p-2 px-5 font-bold"><h3>News &amp; Update</h3></div>
             <div class="">
@@ -248,5 +324,17 @@
         </div>
       </section>
     </div>
+    <script>
+      function sidebar() {
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar.style.display == 'block') {
+          sidebar.style.display = 'none';
+          document.body.style.overflow = 'scroll';
+        } else {
+          sidebar.style.display = 'block';
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    </script>
   </body>
 </html>
