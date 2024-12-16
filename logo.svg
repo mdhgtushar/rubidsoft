@@ -1,0 +1,28 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 71" width="300" height="71">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #000000 } 
+		.t1 { font-size: 31px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t2 { font-size: 3px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t3 { font-size: 38px;fill: #000000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+		.t4 { font-size: 16px;fill: #000000;font-weight: 400;font-family: "DejaVuSans", "DejaVu Sans" } 
+	</style>
+	<path id="Shape 1" class="s0" d="m6 0h44.6c2.8 0 5 2.2 5 5v59.4c0 2.7-2.2 5-5 5h-44.6c-2.8 0-5-2.3-5-5v-59.4c0-2.8 2.2-5 5-5z"/>
+	<text id="Rb" style="transform: matrix(1.067,0,0,1.067,8.47,26.68)" >
+		<tspan x=".7" y="23.6" class="t1">R</tspan><tspan  y="23.6" class="t1">b</tspan><tspan  y="23.6" class="t1">
+</tspan>
+	</text>
+	<text id="37" style="transform: matrix(3.308,0,0,3.308,9.039,19.843)" >
+		<tspan x="0" y="0" class="t2">3</tspan><tspan  y="0" class="t2">7
+</tspan>
+	</text>
+	<text id="RUBIDSOFT" style="transform: matrix(1.067,0,0,1.067,61.713,35.217)" >
+		<tspan x="0" y="0" class="t3">R</tspan><tspan  y="0" class="t3">U</tspan><tspan  y="0" class="t3">B</tspan><tspan  y="0" class="t3">I</tspan><tspan  y="0" class="t3">D</tspan><tspan  y="0" class="t3">S</tspan><tspan  y="0" class="t3">O</tspan><tspan  y="0" class="t3">F</tspan><tspan  y="0" class="t3">T</tspan><tspan  y="0" class="t3">
+</tspan>
+	</text>
+	<text id="Comprehensive IT Services" style="transform: matrix(1.067,0,0,1.067,62.547,62.037)" >
+		<tspan x="0" y="0" class="t4">Comprehensive IT Services</tspan><tspan  y="0" class="t4">
+</tspan>
+	</text>
+</svg>
