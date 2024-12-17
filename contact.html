@@ -183,65 +183,189 @@
         </ul>
       </div>
 
-      <section class="container md:flex justify-between mx-auto overflow-hidden my-3">
-        <div class="flex-1 md:mr-5">
-          <form action="">
-            <div>
-              <label for="fullname">Your Full name</label>
-              <input class="border p-2 w-full" id="fullname" type="text" name="fullname" placeholder="Your Full name">
-            </div>
-            <div>
-              <label for="">Your Email address</label>
-              <input class="border p-2 w-full" type="text" name="email" placeholder="Your Email Address">
-            </div>
-            <div>
-              <label for="">Your Phone Number</label>
-              <input class="border p-2 w-full" type="text" name="phone" placeholder="Your Phone Number">
-            </div>
-            <div>
-              <label for="">Please Specefy the contact subject</label>
-              <input class="border p-2 w-full" type="text" name="subject" placeholder="Contact subject">
-            </div>
-            <div>
-              <label for="">Message Body</label>
-              <textarea class="border p-2 w-full" name="" id="" cols="30" rows="10"></textarea>
-            </div>
-          </form>
+      <section id="contact-hero" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 lg:flex lg:items-center lg:justify-between">
+          <!-- Left Content -->
+          <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4 leading-tight">
+              Get In <span class="text-blue-600">Touch</span> With Us
+            </h1>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Have questions or want to discuss your project? Contact us today and our team will get back to you as soon as possible.
+            </p>
+            <a
+              href="#contact-form"
+              class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Contact Now
+            </a>
+          </div>
+      
+          <!-- Right Image -->
+          <div class="lg:w-1/2">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Contact Us"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
         </div>
-        <div class="md:w-96">
-          <div class="shadow border">
-            <div class="bg-gray-100 p-2 px-5 font-bold"><h3>News &amp; Update</h3></div>
-            <div class="">
-              <div class="p-1 px-5 border-b">
-                <p>
-                  * 01Soft have received work order from Fashion Hub (buying house) for their
-                  official website development
+      </section>
+      
+
+      <section class="container mx-auto my-12">
+        <div class="md:flex justify-between gap-8">
+          <!-- Contact Form -->
+          <div class="flex-1 bg-white border p-6">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">Contact Us</h2>
+            <form action="" method="post" class="space-y-4">
+              <!-- Full Name -->
+              <div>
+                <label for="fullname" class="block text-sm font-medium text-gray-700 mb-1">Your Full Name</label>
+                <input
+                  class="border border-gray-300 p-3 w-full rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                  id="fullname"
+                  type="text"
+                  name="fullname"
+                  placeholder="Your Full Name"
+                  required
+                />
+              </div>
+              <!-- Email Address -->
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email Address</label>
+                <input
+                  class="border border-gray-300 p-3 w-full rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email Address"
+                  required
+                />
+              </div>
+              <!-- Phone Number -->
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Your Phone Number</label>
+                <input
+                  class="border border-gray-300 p-3 w-full rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                />
+              </div>
+              <!-- Contact Subject -->
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Contact Subject</label>
+                <input
+                  class="border border-gray-300 p-3 w-full rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Contact Subject"
+                />
+              </div>
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <textarea
+                  class="border border-gray-300 p-3 w-full rounded-lg focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div>
+                <button
+                  type="submit"
+                  class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+      
+          <!-- News & Updates -->
+          <div class="md:w-96 bg-white border">
+            <div class="bg-gray-100 p-4 rounded-t-lg">
+              <h3 class="text-xl font-bold text-gray-800">News & Updates</h3>
+            </div>
+            <div class="divide-y divide-gray-200">
+              <!-- News Item 1 -->
+              <div class="p-4">
+                <p class="text-gray-700 text-sm">
+                  📌 <strong>Fashion Hub:</strong> Received a work order for their official website development.
                 </p>
               </div>
-              <div class="p-1 px-5 border-b">
-                <p>
-                  * 01Soft have received work order from Mascon Fashion (USA) for their e-commerce
-                  website development
+              <!-- News Item 2 -->
+              <div class="p-4">
+                <p class="text-gray-700 text-sm">
+                  📌 <strong>Mascon Fashion (USA):</strong> Work order for their e-commerce website development.
                 </p>
               </div>
-              <div class="p-1 px-5 border-b">
-                <p>
-                  * 01Soft have received work order from Technique BD for their official website's
-                  renovation
+              <!-- News Item 3 -->
+              <div class="p-4">
+                <p class="text-gray-700 text-sm">
+                  📌 <strong>Technique BD:</strong> Renovating their official website.
                 </p>
               </div>
-              <div class="p-1 px-5"><p>** This is our new client</p></div>
+              <!-- New Client Note -->
+              <div class="p-4 bg-gray-50">
+                <p class="text-gray-500 text-sm">✨ **This is our new client.**</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      
 
-      <div class="p-5 bottom-0 bg-gray-100 hidden md:block">
-        <div class="container mx-auto flex justify-between">
-          <div class=""><p>Rubidsoft - All Rights Reserved</p></div>
-          <div class="nav1right"><a class="fl-r" href="/admin">Admin</a></div>
+      <footer class="bg-gray-100 text-gray-800 py-10">
+        <div class="container mx-auto px-6 lg:px-20">
+          <!-- Footer Content Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">About RubidSoft</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                RubidSoft delivers top-notch IT solutions, including custom application development, website design, and project planning. We focus on quality, innovation, and client satisfaction.
+              </p>
+            </div>
+      
+            <!-- Links Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#services" class="text-gray-600 hover:text-gray-800">Services</a></li>
+                <li><a href="#portfolio" class="text-gray-600 hover:text-gray-800">Portfolio</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>📍 123 Business Avenue, Tech City</li>
+                <li>📞 +1 234 567 890</li>
+                <li>✉️ info@rubidsoft.com</li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="mt-8 border-t border-gray-300 pt-4 text-center">
+            <p class="text-sm text-gray-500">
+              © 2024 RubidSoft. All rights reserved.
+            </p>
+          </div>
         </div>
-      </div>
+      </footer>
+      
     </div>
     <script>
       function sidebar() {

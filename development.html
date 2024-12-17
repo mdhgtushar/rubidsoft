@@ -13,7 +13,7 @@
   <body>
     <div>
       <div>
-        <div class="bg-gray-100 p-2 border-b hidden md:block">
+        <div class="bg-gray-100 p-2 border-b md:block px-5">
           <div class="container mx-auto flex justify-between">
             <div class="">
               <p class="md:inline">
@@ -39,24 +39,46 @@
             </div>
           </div>
         </div>
+
         <div class="border-b border-t-0 bg-gray-100 md:bg-white">
           <section
-            class="container flex justify-between items-center mx-auto py-2"
+            class="container flex sm:justify-between items-center mx-auto py-2"
           >
-            <div class="left">
-              <div class="logo flex">
+            <div class="left w-full md:w-auto">
+              <div class="logo flex justify-between px-4 md:px-0">
+                <a href="index.html"
+              ><img src="logo.svg" style="height: 71px; width: 300px;"  alt="RubidSoft Logo" srcset=""
+            /></a>
                 <button onclick="sidebar()" class="md:hidden">
                   <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
                 </button>
-                <h1
-                  class="text-2xl font-semibold uppercase text-gray-600 hover:text-black tracking-widest duration-200"
-                >
-                  <b>RubidSoft</b>
-                </h1>
               </div>
               <div class="hotline"></div>
             </div>
             <div class="hidden md:flex">
+              <div
+                class="flex flex-col justify-center items-center p-2 mr-2 bg-gray-100"
+              >
+                <div class="flex">
+                  <h2 class="text-xl text-green-600">
+                    <span>OFFER! </span>
+                  </h2>
+                  <span class="relative flex h-3 w-3">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-3 w-3 bg-red-500"
+                    ></span>
+                  </span>
+                </div>
+                <a class="text-sm" href="/"
+                  ><span
+                    >Monday Sale Offer. Checkout our new sale of befor it
+                    close!</span
+                  ></a
+                >
+              </div>
               <div
                 class="flex flex-col justify-center items-center p-2 mr-2 bg-gray-100"
               >
@@ -80,18 +102,62 @@
             </div>
           </section>
         </div>
-        <div class="bg-gray-100 border-b hidden md:block">
-          <section class="container mx-auto">
+        <div
+          class="bg-gray-100 border-b md:block overflow-x-scroll md:overflow-hidden"
+        >
+          <section class="container mx-auto md:w-auto w-max">
             <div class="menus">
               <b
                 ><ul class="flex justify-between items-center">
-                  <li><a class="p-2 pl-0 block" href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="development.html">Website Development</a></li>
-                  <li><a href="projects.html">Our Projects</a></li>
-                  <li><a href="works.html">Our Works</a></li>
-                  <li><a href="contact.html">Contact us</a></li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="about.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="development.html"
+                      >Website Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="projects.html"
+                      >Our Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="works.html"
+                      >Our Works</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="contact.html"
+                      >Contact us</a
+                    >
+                  </li>
                 </ul></b
               >
             </div>
@@ -101,23 +167,58 @@
       </div>
 
       <div
-        class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
+        class="w-full absolute bg-white h-screen top-0 duration-200 overflow-y-scroll"
         id="sidebar"
         style="display: none"
       >
-        <div class="w-full bg-gray-100 shadow p-2">
-          <div class="flex items-center">
-            <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
-            <h1
-              class="text-2xl font-semibold uppercase text-gray-600 hover:text-black tracking-widest duration-200"
-            >
-              <b>RubidSoft</b>
-            </h1>
+        <div class="bg-gray-100 p-2 border-b md:block px-5">
+          <div class="container mx-auto flex justify-between">
+            <div class="">
+              <p class="md:inline">
+                <b>Email:</b>
+                <a class="text-green-600" href="mailto:email@gmail.com"
+                  >email@gmail.com</a
+                >
+              </p>
+              <p class="md:inline">
+                <b> Phone:</b>
+                <a class="text-green-600" href="tel:email@gmail.com"
+                  >+8801302855453</a
+                >
+              </p>
+            </div>
+            <div class="nav1right md:block hidden">
+              <a
+                class="fl-r"
+                href="https://mdhgtushar.github.io"
+                target="_blank"
+                >Executor</a
+              >
+            </div>
           </div>
         </div>
-        <ul class="m-0 w-96">
+        <div class="w-full bg-gray-100 shadow py-2">
+          <div class="logo flex justify-between px-4 md:px-0">
+            <a href="index.html"
+              ><img src="logo.svg" style="height: 71px; width: 300px;"  alt="RubidSoft Logo" srcset=""
+            /></a>
+            <button onclick="sidebar()">
+              <i class="fa fa-times mx-2 text-2xl" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+
+       
+        <ul class="m-0">
+          <li>
+            <a
+              href="about.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            >
+              <i class="fa fa-home mr-3" aria-hidden="true"></i> Home</a
+            >
+          </li>
           <li>
             <a
               href="about.html"
@@ -169,7 +270,35 @@
           </li>
         </ul>
       </div>
-
+      <section id="web-dev-hero" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6 lg:flex lg:items-center lg:justify-between">
+          <!-- Left Content -->
+          <div class="lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">
+            <h1 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+              Professional <span class="text-blue-600">Website Development</span> Services
+            </h1>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              We build fast, modern, and user-friendly websites tailored to your business needs. Whether it's a corporate website, portfolio, or e-commerce platform – we deliver solutions that make an impact.
+            </p>
+            <a
+              href="#contact"
+              class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Get a Free Quote
+            </a>
+          </div>
+      
+          <!-- Right Image -->
+          <div class="lg:w-1/2">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Website Development"
+              class="rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
+      
       <section
         class="container md:flex justify-between mx-auto overflow-hidden my-3"
       >
@@ -228,12 +357,48 @@
         </div>
       </section>
 
-      <div class="p-5 bottom-0 bg-gray-100 hidden md:block">
-        <div class="container mx-auto flex justify-between">
-          <div class=""><p>Rubidsoft - All Rights Reserved</p></div>
-          <div class="nav1right"><a class="fl-r" href="/admin">Admin</a></div>
+      <footer class="bg-gray-100 text-gray-800 py-10">
+        <div class="container mx-auto px-6 lg:px-20">
+          <!-- Footer Content Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">About RubidSoft</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                RubidSoft delivers top-notch IT solutions, including custom application development, website design, and project planning. We focus on quality, innovation, and client satisfaction.
+              </p>
+            </div>
+      
+            <!-- Links Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#services" class="text-gray-600 hover:text-gray-800">Services</a></li>
+                <li><a href="#portfolio" class="text-gray-600 hover:text-gray-800">Portfolio</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>📍 123 Business Avenue, Tech City</li>
+                <li>📞 +1 234 567 890</li>
+                <li>✉️ info@rubidsoft.com</li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="mt-8 border-t border-gray-300 pt-4 text-center">
+            <p class="text-sm text-gray-500">
+              © 2024 RubidSoft. All rights reserved.
+            </p>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
     <script>
       function sidebar() {
