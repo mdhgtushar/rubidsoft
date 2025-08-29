@@ -1,557 +1,841 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubidsoft - Comprehensive IT Services</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to RubidSoft - Comprehensive IT Services</title>
     <link rel="icon" type="image/jpeg" href="fav_icon.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <!-- Top Section -->
-        <div class="header-top">
-            <div class="container">
-                <div class="top-content">
-                    <div class="contact-info">
-                        <span><i class="fas fa-phone"></i> +8801302855453</span>
-                        <span><i class="fas fa-envelope"></i> rubidsoft@gmail.com</span>
-                    </div>
-                    <div class="promotion">
-                        <span class="promo-badge">🎉 Special Offer: 20% Off Landing Pages!</span>
-                    </div>
-                </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div>
+        <div class="bg-gray-100 p-2 border-b md:block px-5">
+          <div class="container mx-auto flex justify-between">
+            <div class="">
+              <p class="md:inline">
+                <b>Email:</b>
+                <a class="text-green-600" href="mailto:rubidsoft@gmail.com"
+                  >rubidsoft@gmail.com</a
+                >
+              </p>
+              <p class="md:inline">
+                <b> Phone:</b>
+                <a class="text-green-600" href="tel:rubidsoft@gmail.com"
+                  >+8801302855453</a
+                >
+              </p>
             </div>
+            <div class="nav1right md:block hidden">
+                              <a
+                  class="fl-r"
+                  href="https://mdhgtushar.github.io"
+                  target="_blank"
+                  >Executor</a
+                >
+            </div>
+          </div>
         </div>
 
-        <!-- Middle Section -->
-        <div class="header-middle">
-            <div class="container">
-                <div class="middle-content">
-                    <div class="logo">
-                        <div class="logo-icon">
-                            <img src="fav_icon.jpg" alt="Rubidsoft Logo" class="logo-img">
-                        </div>
-                        <div class="logo-text">
-                            <h1>Rubidsoft</h1>
-                            <p>Comprehensive IT Services</p>
-                        </div>
-                    </div>
-                    <div class="offer">
-                        <div class="offer-card">
-                            <i class="fas fa-rocket"></i>
-                            <span>Comprehensive IT Solutions</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="border-b border-t-0 bg-gray-100 md:bg-white">
+          <section
+            class="container flex sm:justify-between items-center mx-auto py-2"
+          >
+            <div class="left w-full md:w-auto">
+              <div class="logo flex justify-between px-4 md:px-0">
+                <a href="index.html"
+              ><img src="logo.svg" style="height: 71px; width: 300px;"  alt="RubidSoft Logo" srcset=""
+            /></a>
+                <button onclick="sidebar()" class="md:hidden">
+                  <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="hotline"></div>
             </div>
+            <div class="hidden md:flex">
+              <div
+                class="flex flex-col justify-center items-center p-2 mr-2 bg-gray-100"
+              >
+                <div class="flex">
+                  <h2 class="text-xl text-green-600">
+                    <span>OFFER! </span>
+                  </h2>
+                  <span class="relative flex h-3 w-3">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-3 w-3 bg-red-500"
+                    ></span>
+                  </span>
+                </div>
+                <a class="text-sm" href="/"
+                  ><span
+                    >Monday Sale Offer. Checkout our new sale of befor it
+                    close!</span
+                  ></a
+                >
+              </div>
+              <div
+                class="flex flex-col justify-center items-center p-2 mr-2 bg-gray-100"
+              >
+                <img
+                  class="w-8"
+                  src="http://www.01soft.com.bd/assets/img/top5.png"
+                  alt=""
+                /><a class="text-sm" href="/"
+                  ><span>Website Development</span></a
+                >
+              </div>
+              <div
+                class="flex flex-col justify-center items-center p-2 bg-gray-100"
+              >
+                <img
+                  class="w-8"
+                  src="http://www.01soft.com.bd/assets/img/slider2%20(2).png"
+                  alt=""
+                /><a class="text-sm" href="/"><span>WebSite Template</span></a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="bg-gray-100 border-b md:block overflow-x-scroll md:overflow-hidden"
+        >
+          <section class="container mx-auto md:w-auto w-max">
+            <div class="menus">
+              <b
+                ><ul class="flex justify-between items-center">
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="about.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="services.html"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="development.html"
+                      >Website Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="projects.html"
+                      >Our Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="works.html"
+                      >Our Works</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="p-1 px-2 block bg-gray-400 md:bg-gray-100 m-2"
+                      href="contact.html"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul></b
+              >
+            </div>
+          </section>
+          <section></section>
+        </div>
+      </div>
+
+      <div
+        class="w-full absolute bg-white h-screen top-0 duration-200 overflow-y-scroll"
+        id="sidebar"
+        style="display: none"
+      >
+        <div class="bg-gray-100 p-2 border-b md:block px-5">
+          <div class="container mx-auto flex justify-between">
+            <div class="">
+              <p class="md:inline">
+                <b>Email:</b>
+                <a class="text-green-600" href="mailto:rubidsoft@gmail.com"
+                  >rubidsoft@gmail.com</a
+                >
+              </p>
+              <p class="md:inline">
+                <b> Phone:</b>
+                <a class="text-green-600" href="tel:rubidsoft@gmail.com"
+                  >+8801302855453</a
+                >
+              </p>
+            </div>
+            <div class="nav1right md:block hidden">
+              <a
+                class="fl-r"
+                href="https://mdhgtushar.github.io"
+                target="_blank"
+                >Executor</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full bg-gray-100 shadow py-2">
+          <div class="logo flex justify-between px-4 md:px-0">
+            <a href="index.html"
+              ><img src="logo.svg" style="height: 71px; width: 300px;"  alt="RubidSoft Logo" srcset=""
+            /></a>
+            <button onclick="sidebar()">
+              <i class="fa fa-times mx-2 text-2xl" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
 
-        <!-- Navigation Menu -->
-        <nav class="header-nav">
-            <div class="container">
-                <ul class="nav-menu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="website-development.html">Website Dev</a></li>
-                    <li><a href="#technology">Technology</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-carousel">
-                <div class="carousel-slide active">
-                    <div class="container">
-                        <div class="hero-content-wrapper">
-                            <div class="hero-text-content">
-                                <div class="hero-graphics">
-                                    <div class="graphic-icon">
-                                        <i class="fas fa-cogs"></i>
-                                    </div>
-                                    <div class="floating-elements">
-                                        <div class="floating-circle"></div>
-                                        <div class="floating-square"></div>
-                                        <div class="floating-triangle"></div>
-                                    </div>
-                                </div>
-                            <h2>Comprehensive IT Services</h2>
-                                <p>We provide end-to-end IT solutions that drive digital transformation for your business. From web development to cloud infrastructure, we've got you covered.</p>
-                            <div class="hero-buttons">
-                                <a href="#services" class="btn btn-primary">Our Services</a>
-                                <a href="#contact" class="btn btn-secondary">Get Quote</a>
-                                </div>
-                            </div>
-                            <div class="hero-image-container">
-                                <div class="hero-image">
-                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="IT Services" class="animated-image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <div class="container">
-                        <div class="hero-content-wrapper">
-                            <div class="hero-text-content">
-                                <div class="hero-graphics">
-                                    <div class="graphic-icon">
-                                        <i class="fas fa-rocket"></i>
-                                    </div>
-                                    <div class="floating-elements">
-                                        <div class="floating-diamond"></div>
-                                        <div class="floating-hexagon"></div>
-                                        <div class="floating-star"></div>
-                                    </div>
-                                </div>
-                            <h2>Digital Transformation</h2>
-                                <p>Modernize your business with cutting-edge technology solutions. Embrace the future with AI, cloud computing, and automation that drives growth.</p>
-                            <div class="hero-buttons">
-                                <a href="#services" class="btn btn-primary">Learn More</a>
-                                <a href="#contact" class="btn btn-secondary">Start Project</a>
-                                </div>
-                            </div>
-                            <div class="hero-image-container">
-                                <div class="hero-image">
-                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Digital Transformation" class="animated-image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <div class="container">
-                        <div class="hero-content-wrapper">
-                            <div class="hero-text-content">
-                                <div class="hero-graphics">
-                                    <div class="graphic-icon">
-                                        <i class="fas fa-lightbulb"></i>
-                                    </div>
-                                    <div class="floating-elements">
-                                        <div class="floating-pentagon"></div>
-                                        <div class="floating-oval"></div>
-                                        <div class="floating-cross"></div>
-                                    </div>
-                                </div>
-                            <h2>Innovation & Excellence</h2>
-                                <p>Delivering innovative solutions with proven expertise and reliability. We stay ahead of the curve with the latest technologies and best practices.</p>
-                            <div class="hero-buttons">
-                                <a href="#technology" class="btn btn-primary">Our Tech</a>
-                                <a href="#contact" class="btn btn-secondary">Contact Us</a>
-                                </div>
-                            </div>
-                            <div class="hero-image-container">
-                                <div class="hero-image">
-                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Innovation" class="animated-image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="carousel-indicators">
-                    <span class="indicator active"></span>
-                    <span class="indicator"></span>
-                    <span class="indicator"></span>
-                </div>
+       
+        <ul class="m-0">
+          <li>
+            <a
+              href="about.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            >
+              <i class="fa fa-home mr-3" aria-hidden="true"></i> Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            >
+              <i class="fa fa-id-card-o mr-3" aria-hidden="true"></i> About
+              Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="services.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-graduation-cap mr-3" aria-hidden="true"></i>
+              Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="development.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-briefcase mr-3" aria-hidden="true"></i> Website
+              Development</a
+            >
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i> Our
+              Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="works.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-picture-o mr-3" aria-hidden="true"></i> Our
+              Works</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Contact
+              Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Hero Section -->
+      <section id="hero" class="bg-gray-100 py-16 mb-5">
+        <div
+          class="container mx-auto px-6 lg:flex lg:items-center lg:justify-between"
+        >
+          <!-- Left Content -->
+          <div class="lg:w-1/2">
+            <h1 class="text-4xl font-bold text-gray-800 leading-tight mb-4">
+              Empowering Your Business with
+              <span class="text-blue-600">Innovative IT Solutions</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-6">
+              At RubidSoft, we deliver tailor-made solutions in project
+              planning, database design, API development, and website creation
+              to take your business to the next level.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="#contact"
+                class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+              >
+                Get Started
+              </a>
+              <a
+                href="#services"
+                class="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition"
+              >
+                Explore Services
+              </a>
             </div>
-        </section>
+          </div>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section">
-            <div class="container">
-                <div class="services-header">
-                    <div class="services-title">
-                        <h2>Comprehensive IT Solutions</h2>
-                        <p>From concept to deployment, we deliver end-to-end development services that transform your ideas into powerful digital solutions</p>
+          <!-- Right Image -->
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <img
+              src="assets/img/home-hero.png"
+              alt="Hero Image"
+              class="rounded-lg shadow-lg mx-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="h-screen overflow-y-scroll"> -->
+        <main class="overflow-hidden mb-5">
+          <!-- content -->
+          <section class="w-full">
+            <!-- Services Section -->
+            <section class="bg-gray-50 py-16">
+              <div class="container mx-auto px-6">
+                <!-- Section Heading -->
+                <div class="text-center mb-16">
+                  <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    Our Core Services
+                  </h2>
+                  <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide comprehensive IT solutions to help your business grow and succeed in the digital world
+                  </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <!-- Service 1 -->
+                  <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors">
+                      <span class="text-3xl">💻</span>
                     </div>
-                    <div class="services-navigation">
-                        <button class="nav-btn prev-service"><i class="fas fa-chevron-left"></i></button>
-                        <button class="nav-btn next-service"><i class="fas fa-chevron-right"></i></button>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">
+                      Website Development
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Professional, responsive websites that convert visitors into customers
+                    </p>
+                  </div>
+
+                  <!-- Service 2 -->
+                  <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors">
+                      <span class="text-3xl">🛠️</span>
                     </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">
+                      Custom Applications
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Tailored software solutions designed for your specific business needs
+                    </p>
+                  </div>
+
+                  <!-- Service 3 -->
+                  <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors">
+                      <span class="text-3xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">
+                      IT Consultation
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Strategic guidance to optimize your technology infrastructure
+                    </p>
+                  </div>
+
+                  <!-- Service 4 -->
+                  <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-200 transition-colors">
+                      <span class="text-3xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">
+                      Digital Transformation
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                      Modernize your business processes with cutting-edge technology
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Detailed Services Section -->
+            <section class="py-16 bg-white w-full">
+              <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                  <h2 class="text-4xl font-bold text-gray-800 mb-4">
+                    Comprehensive IT Solutions
+                  </h2>
+                  <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From initial planning to final deployment, we handle every aspect of your IT project
+                  </p>
                 </div>
                 
-                <div class="services-layout">
-                    <div class="services-sidebar">
-                        <h3 class="sidebar-title">Our Services</h3>
-                        <div class="category-list">
-                            <div class="category-item">
-                                <i class="fas fa-laptop-code"></i>
-                                <span>Frontend Development</span>
-                            </div>
-                            <div class="category-item">
-                                <i class="fas fa-server"></i>
-                                <span>Backend Development</span>
-                            </div>
-                            <div class="category-item">
-                                <i class="fas fa-layer-group"></i>
-                                <span>Full Stack Development</span>
-                            </div>
-                        </div>
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                  <!-- Service 1 -->
+                  <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200">
+                    <div class="flex items-center mb-6">
+                      <div class="bg-blue-500 text-white p-4 rounded-xl mr-6">
+                        <span class="text-3xl">🗂️</span>
+                      </div>
+                      <h3 class="text-2xl font-bold text-gray-800">Strategic Project Planning</h3>
                     </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                      We develop comprehensive project roadmaps that align with your business objectives. 
+                      Our planning process includes requirement analysis, timeline development, and risk assessment 
+                      to ensure successful project delivery.
+                    </p>
+                  </div>
+
+                  <!-- Service 2 -->
+                  <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl border border-green-200">
+                    <div class="flex items-center mb-6">
+                      <div class="bg-green-500 text-white p-4 rounded-xl mr-6">
+                        <span class="text-3xl">🗃️</span>
+                      </div>
+                      <h3 class="text-2xl font-bold text-gray-800">Database Architecture</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                      Our database solutions are designed for scalability, performance, and security. 
+                      We create robust data structures that grow with your business while maintaining 
+                      data integrity and fast query performance.
+                    </p>
+                  </div>
+
+                  <!-- Service 3 -->
+                  <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl border border-purple-200">
+                    <div class="flex items-center mb-6">
+                      <div class="bg-purple-500 text-white p-4 rounded-xl mr-6">
+                        <span class="text-3xl">🔗</span>
+                      </div>
+                      <h3 class="text-2xl font-bold text-gray-800">API Development</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                      We build secure, scalable APIs that enable seamless integration between your systems. 
+                      Our APIs follow industry best practices for security, documentation, and performance optimization.
+                    </p>
+                  </div>
+
+                  <!-- Service 4 -->
+                  <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl border border-red-200">
+                    <div class="flex items-center mb-6">
+                      <div class="bg-red-500 text-white p-4 rounded-xl mr-6">
+                        <span class="text-3xl">🌐</span>
+                      </div>
+                      <h3 class="text-2xl font-bold text-gray-800">Web Development</h3>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                      We create modern, responsive websites that deliver exceptional user experiences. 
+                      Our development process focuses on performance, SEO optimization, and conversion rate optimization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 w-full">
+              <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                  <!-- Text Content -->
+                  <div>
+                    <div class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                      About RubidSoft
+                    </div>
+                    <h2 class="text-5xl font-bold text-gray-800 mb-8 leading-tight">
+                      Empowering Businesses Through 
+                      <span class="text-blue-600">Innovation</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                      We are a team of passionate technology professionals dedicated to transforming businesses 
+                      through innovative IT solutions. With years of experience in the industry, we understand 
+                      the challenges modern businesses face and provide tailored solutions that drive growth.
+                    </p>
                     
-                    <div class="services-carousel">
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner">
-                                    <span class="service-text">Project Planning</span>
-                                    <h3>Project Planning</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Detailed planning and strategizing for successful project execution from concept to launch.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner bug-fix-bg">
-                                    <span class="service-text">Bug Fixing & Feature Additions</span>
-                                    <h3>Bug Fixing & Feature Additions</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner backend-bg">
-                                    <span class="service-text">Backend Development</span>
-                                    <h3>Backend Development</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner frontend-bg">
-                                    <span class="service-text">Frontend Development</span>
-                                    <h3>Frontend Development</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner website-bg">
-                                    <span class="service-text">Website Development</span>
-                                    <h3>Website Development</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner mern-bg">
-                                    <span class="service-text">Web App Development (MERN)</span>
-                                    <h3>Web App Development (MERN)</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner saas-bg">
-                                    <span class="service-text">SaaS Development</span>
-                                    <h3>SaaS Development</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="service-card">
-                            <div class="service-image">
-                                <div class="service-banner whmcs-bg">
-                                    <span class="service-text">WHMCS Development</span>
-                                    <h3>WHMCS Development</h3>
-                                </div>
-                            </div>
-                            <div class="service-content">
-                                <p>Customizing and extending WHMCS for billing, client management, and automation.</p>
-                            </div>
-                        </div>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                      <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                        <div class="text-gray-600">Projects Completed</div>
+                      </div>
+                      <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                        <div class="text-gray-600">Years Experience</div>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About Us</h2>
-                        <p>We are a team of passionate developers and designers dedicated to creating exceptional web experiences. With years of experience in the industry, we understand what makes a website successful.</p>
-                        <p>Our mission is to help businesses establish a strong online presence through innovative web solutions that drive results.</p>
+                    <div class="space-y-4 mb-8">
+                      <div class="flex items-center">
+                        <div class="w-6 h-6 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+                        <span class="text-gray-700">Expert team with proven track record</span>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="w-6 h-6 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+                        <span class="text-gray-700">Custom solutions tailored to your needs</span>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="w-6 h-6 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+                        <span class="text-gray-700">On-time delivery guaranteed</span>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="w-6 h-6 bg-green-500 rounded-full mr-4 flex-shrink-0"></div>
+                        <span class="text-gray-700">24/7 support and maintenance</span>
+                      </div>
                     </div>
-                    <div class="ceo-message">
-                        <div class="ceo-avatar">
-                            <img src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz Tushar - CEO" class="ceo-photo">
-                        </div>
-                        <div class="ceo-info">
-                            <h3>Hobayer Golondaz Tushar</h3>
-                            <p class="ceo-title">Founder and CEO at Rubidsoft</p>
-                            <blockquote>
-                                "We believe that every business deserves a website that not only looks great but also performs exceptionally. Our commitment to quality and innovation sets us apart in the industry."
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Technology Section -->
-        <section id="technology" class="technology-section">
-            <div class="container">
-                <!-- Technology Cards in One Line -->
-                <div class="tech-category">
-                    <div class="section-header">
-                        <h3>Our Technology Stack</h3>
-                        <p>Built with modern, reliable technologies for optimal performance and scalability</p>
+                    <div class="flex gap-4">
+                      <a
+                        href="#contact"
+                        class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                      >
+                        Get Started Today
+                      </a>
+                      <a
+                        href="#portfolio"
+                        class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
+                      >
+                        View Our Work
+                      </a>
                     </div>
-                    <div class="tech-carousel">
-                        <div class="tech-carousel-track">
-                            <div class="tech-card">
-                                <div class="tech-card-image">
-                                    <div class="service-banner frontend-bg">
-                                        <span class="service-text">Front-End Development</span>
-                                        <h3>Front-End Development</h3>
-                                    </div>
-                                </div>
-                                <div class="tech-card-content">
-                                    <ul class="tech-skills-list">
-                                        <li><i class="fab fa-react"></i> React.js</li>
-                                        <li><i class="fab fa-html5"></i> HTML5</li>
-                                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                                        <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
-                                        <li><i class="fab fa-css3"></i> Tailwind CSS</li>
-                                        <li><i class="fas fa-paint-brush"></i> Design-to-Code</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="tech-card">
-                                <div class="tech-card-image">
-                                    <div class="service-banner backend-bg">
-                                        <span class="service-text">Back-End Development</span>
-                                        <h3>Back-End Development</h3>
-                                    </div>
-                                </div>
-                                <div class="tech-card-content">
-                                    <ul class="tech-skills-list">
-                                        <li><i class="fab fa-node-js"></i> Node.js</li>
-                                        <li><i class="fab fa-node-js"></i> Express.js</li>
-                                        <li><i class="fab fa-js"></i> JavaScript</li>
-                                        <li><i class="fab fa-php"></i> PHP</li>
-                                        <li><i class="fas fa-code"></i> RESTful APIs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="tech-card">
-                                <div class="tech-card-image">
-                                    <div class="service-banner database-bg">
-                                        <span class="service-text">Database Management</span>
-                                        <h3>Database Management</h3>
-                                    </div>
-                                </div>
-                                <div class="tech-card-content">
-                                    <ul class="tech-skills-list">
-                                        <li><i class="fas fa-database"></i> MySQL</li>
-                                        <li><i class="fas fa-leaf"></i> MongoDB</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="tech-card">
-                                <div class="tech-card-image">
-                                    <div class="service-banner tools-bg">
-                                        <span class="service-text">Tools & Technologies</span>
-                                        <h3>Tools & Technologies</h3>
-                                    </div>
-                                </div>
-                                <div class="tech-card-content">
-                                    <ul class="tech-skills-list">
-                                        <li><i class="fab fa-git-alt"></i> Git</li>
-                                        <li><i class="fab fa-github"></i> GitHub</li>
-                                        <li><i class="fas fa-code"></i> VS Code</li>
-                                        <li><i class="fas fa-paper-plane"></i> Postman</li>
-                                        <li><i class="fab fa-wordpress"></i> WordPress</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="tech-card">
-                                <div class="tech-card-image">
-                                    <div class="service-banner marketing-bg">
-                                        <span class="service-text">Marketing & Analytics</span>
-                                        <h3>Marketing & Analytics</h3>
-                                    </div>
-                                </div>
-                                <div class="tech-card-content">
-                                    <ul class="tech-skills-list">
-                                        <li><i class="fab fa-facebook"></i> Pixel Setup</li>
-                                        <li><i class="fas fa-tags"></i> Google Tag Manager</li>
-                                        <li><i class="fas fa-chart-line"></i> Google Analytics</li>
-                                        <li><i class="fas fa-bullhorn"></i> Marketing Campaigns</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                  </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Contact Us</h2>
-                    <p>Get in touch with us for your next web project</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Subject" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Your Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
+                  <!-- Image Content -->
+                  <div class="relative">
+                    <div class="bg-blue-600 w-80 h-80 rounded-full absolute -top-10 -right-10 opacity-10"></div>
+                    <div class="bg-blue-400 w-60 h-60 rounded-full absolute -bottom-10 -left-10 opacity-10"></div>
+                    <div class="relative z-10">
+                      <img
+                        src="logo.png"
+                        alt="RubidSoft Team"
+                        class="rounded-2xl shadow-2xl w-full"
+                      />
                     </div>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+8801302855453</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>rubidsoft@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-video"></i>
-                            <div>
-                                <h4>Google Meet</h4>
-                                <p>Schedule a meeting</p>
-                                <a href="#" class="btn btn-secondary">Book Meeting</a>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Portfolio/Case Studies Section -->
+            <section id="latest-works" class="mb-2">
+              <div>
+                <!-- Section Header -->
+                <div class="bg-gray-100 p-3 px-6 font-bold mb-4">
+                  <h3 class="text-lg text-gray-800">Latest Completed Works:</h3>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="md:grid grid-cols-2 gap-6 p-2 md:p-0">
+                  <!-- Project 1 -->
+                  <div
+                    class="w-full border border-gray-200 mb-4 md:mb-0 bg-white"
+                  >
+                    <div class="flex items-center p-4">
+                      <div class="p-4 border-r ">
+                        <img
+                        class="w-16 md:w-20 p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
+                        alt="Project 1"
+                      />
+                      </div>
+                      <div class="pl-5">
+                        <h5 class="mb-1 text-lg font-medium text-gray-900">
+                          Inventory Management System
+                        </h5>
+                        <span class="text-sm text-gray-500">
+                          Streamline inventory tracking and optimize warehouse
+                          operations.
+                        </span>
+                        <br />
+                        <a
+                          href="/projects/inventory-management"
+                          class="text-blue-600 hover:underline mt-2 block"
+                        >
+                          View Project
+                        </a>
+                      </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                  </div>
 
-        <!-- Newsletter Section -->
-        <section class="newsletter-section">
-            <div class="container">
-                <div class="newsletter-content">
-                    <h3>Stay Updated</h3>
-                    <p>Subscribe to our newsletter for the latest web development insights and offers</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                                         <h4>Rubidsoft</h4>
-                     <p>Comprehensive IT services for modern businesses.</p>
-                    <div class="social-links">
-                        <a href="/rubidsoft"><i class="fab fa-facebook"></i></a>
-                        <a href="/rubidsoft"><i class="fab fa-twitter"></i></a>
-                        <a href="/rubidsoft"><i class="fab fa-linkedin"></i></a>
-                        <a href="/rubidsoft"><i class="fab fa-instagram"></i></a>
+                  <!-- Project 2 -->
+                  <div
+                    class="w-full border border-gray-200 mb-4 md:mb-0 bg-white"
+                  >
+                    <div class="flex items-center p-4">
+                      <div class="p-4 border-r"><img
+                        class="w-16 md:w-20 p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/768px-Typescript_logo_2020.svg.png"
+                        alt="Project 2"
+                      />
                     </div>
+                      <div class="pl-5">
+                        <h5 class="mb-1 text-lg font-medium text-gray-900">
+                          E-Commerce Platform
+                        </h5>
+                        <span class="text-sm text-gray-500">
+                          A scalable solution for online sales with seamless
+                          payment integration.
+                        </span>
+                        <br />
+                        <a
+                          href="/projects/e-commerce"
+                          class="text-blue-600 hover:underline mt-2 block"
+                        >
+                          View Project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 3 -->
+                  <div
+                    class="w-full border border-gray-200 mb-4 md:mb-0 bg-white"
+                  >
+                    <div class="flex items-center p-4">
+                      <div class="p-4 border-r"><img
+                        class="w-16 md:w-20 p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+                        alt="Project 3"
+                      />
+                    </div>
+                      <div class="pl-5">
+                        <h5 class="mb-1 text-lg font-medium text-gray-900">
+                          CRM Application
+                        </h5>
+                        <span class="text-sm text-gray-500">
+                          Simplify client management with a feature-rich CRM
+                          solution.
+                        </span>
+                        <br />
+                        <a
+                          href="/projects/crm-application"
+                          class="text-blue-600 hover:underline mt-2 block"
+                        >
+                          View Project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project 4 -->
+                  <div
+                    class="w-full border border-gray-200 mb-4 md:mb-0 bg-white"
+                  >
+                    <div class="flex items-center p-4">
+                      <div class="p-4 border-r"><img
+                        class="w-16 md:w-20 p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png"
+                        alt="Project 4"
+                      />
+                    </div>
+                      <div class="pl-5">
+                        <h5 class="mb-1 text-lg font-medium text-gray-900">
+                          Online Learning Platform
+                        </h5>
+                        <span class="text-sm text-gray-500">
+                          A comprehensive platform for virtual learning with
+                          interactive features.
+                        </span>
+                        <br />
+                        <a
+                          href="/projects/online-learning"
+                          class="text-blue-600 hover:underline mt-2 block"
+                        >
+                          View Project
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Website Development</a></li>
-                        <li><a href="#services">Landing Pages</a></li>
-                        <li><a href="#services">Mobile Development</a></li>
-                        <li><a href="#services">SEO Optimization</a></li>
-                    </ul>
+              </div>
+            </section>
+ 
+            <!-- tech strength -->
+            <div>
+              <div class="bg-gray-100 p-2 px-5 font-bold">
+                <h3>Technology Strength:</h3>
+              </div>
+              <div class="py-10">
+                <!-- Section Heading -->
+                <div class="mb-8 px-5">
+                  <h3 class="text-2xl font-bold text-gray-800">
+                    Technology Strength
+                  </h3>
+                  <p class="text-gray-600 mt-2">
+                    Empowering our solutions with modern and efficient
+                    technologies.
+                  </p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <!-- Technologies Grid -->
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                >
+                  <!-- Tailwind CSS -->
+                  <div
+                    class="p-4 bg-white border border-gray-200 flex flex-col items-center justify-center h-40"
+                  >
+                    <img
+                      class="w-32 h-auto"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/2560px-Tailwind_CSS_logo.svg.png"
+                      alt="Tailwind CSS"
+                    />
+                    <p class="text-center text-gray-700 mt-2 text-sm">
+                      Tailwind CSS
+                    </p>
+                  </div>
+
+                  <!-- Express.js -->
+                  <div
+                    class="p-4 bg-white border border-gray-200 flex flex-col items-center justify-center h-40"
+                  >
+                    <img
+                      class="w-32 h-auto"
+                      src="https://kinsta.com/wp-content/uploads/2022/04/express-1.png"
+                      alt="Express.js"
+                    />
+                    <p class="text-center text-gray-700 mt-2 text-sm">
+                      Express.js
+                    </p>
+                  </div>
+
+                  <!-- React -->
+                  <div
+                    class="p-4 bg-white border border-gray-200 flex flex-col items-center justify-center h-40"
+                  >
+                    <img
+                      class="w-16 h-auto"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                      alt="React"
+                    />
+                    <p class="text-center text-gray-700 mt-2 text-sm">React</p>
+                  </div>
+
+                  <!-- MongoDB -->
+                  <div
+                    class="p-4 bg-white border border-gray-200 flex flex-col items-center justify-center h-40"
+                  >
+                    <img
+                      class="w-32 h-auto"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+                      alt="MongoDB"
+                    />
+                    <p class="text-center text-gray-700 mt-2 text-sm">
+                      MongoDB
+                    </p>
+                  </div>
                 </div>
-                                     <div class="footer-section">
-                         <h4>Contact Info</h4>
-                         <p><i class="fas fa-phone"></i> +8801302855453</p>
-                         <p><i class="fas fa-envelope"></i> rubidsoft@gmail.com</p>
-                         <p><i class="fas fa-map-marker-alt"></i> 138 KBI Road, Mymensingh</p>
-                     </div>
+              </div>
             </div>
-                         <div class="footer-bottom">
-                 <p>&copy; 2024 Rubidsoft. All rights reserved.</p>
-             </div>
+
+            <section class="mb-2">
+              <div class="bg-gray-100 p-2 px-5 font-bold mb-1">
+                <h3>Want to start a project?</h3>
+              </div>
+              <div class="py-16 px-6 lg:px-20 text-center bg-gray-100">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                  Ready to Elevate Your Business with RubidSoft?
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                  Whether you need a custom website, efficient API development,
+                  or expert IT consultation, our team is here to help. Let’s
+                  work together to achieve your business goals.
+                </p>
+                <a
+                  href="#contact"
+                  class="bg-green-600 text-white px-8 py-4 rounded-lg font-semibold shadow-md hover:bg-green-700 transition"
+                >
+                  Contact Us Today
+                </a>
+              </div>
+            </section>
+          </section>
+
+        </main>
+      <!-- </div> -->
+
+      <footer class="bg-gray-100 text-gray-800 py-10">
+        <div class="container mx-auto px-6 lg:px-20">
+          <!-- Footer Content Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">About RubidSoft</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                RubidSoft delivers top-notch IT solutions, including custom application development, website design, and project planning. We focus on quality, innovation, and client satisfaction.
+              </p>
+            </div>
+      
+            <!-- Links Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#services" class="text-gray-600 hover:text-gray-800">Services</a></li>
+                <li><a href="#portfolio" class="text-gray-600 hover:text-gray-800">Portfolio</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800">About Us</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Section -->
+            <div>
+              <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+              <ul class="space-y-2 text-sm text-gray-600">
+                <li>📍 123 Business Avenue, Tech City</li>
+                <li>📞 +1 234 567 890</li>
+                <li>✉️ info@rubidsoft.com</li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="mt-8 border-t border-gray-300 pt-4 text-center">
+            <p class="text-sm text-gray-500">
+              © 2024 RubidSoft. All rights reserved.
+            </p>
+          </div>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+      </footer>
+      
+      
+    </div>
+    <script>
+      function sidebar() {
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar.style.display == "block") {
+          sidebar.style.display = "none";
+          document.body.style.overflow = "scroll";
+        } else {
+          sidebar.style.display = "block";
+          document.body.style.overflow = "hidden";
+        }
+      }
+    </script>
+  </body>
 </html>
