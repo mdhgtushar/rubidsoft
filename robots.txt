@@ -8,6 +8,7 @@ Sitemap: https://rubidsoft.com/sitemap.xml
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+Disallow: /web_development/
 
 # Allow important files
 Allow: /*.html
@@ -17,3 +18,18 @@ Allow: /*.jpg
 Allow: /*.png
 Allow: /*.svg
 Allow: /*.ico
+Allow: /*.xml
+Allow: /*.txt
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
