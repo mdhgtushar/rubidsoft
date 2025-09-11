@@ -65,6 +65,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -379,110 +380,154 @@
         <!-- Services Section -->
         <section id="services" class="services-section">
             <div class="container">
-                <div class="services-header">
-                    <div class="services-title">
+                <div class="section-header">
                         <h2>Comprehensive IT Solutions</h2>
                         <p>From concept to deployment, we deliver end-to-end development services that transform your ideas into powerful digital solutions</p>
-                    </div>
-                    <div class="services-navigation">
-                        <button class="nav-btn prev-service"><i class="fas fa-chevron-left"></i></button>
-                        <button class="nav-btn next-service"><i class="fas fa-chevron-right"></i></button>
-                    </div>
                 </div>
                 
                 <div class="services-layout">
                     <div class="services-sidebar">
-                        <h3 class="sidebar-title">Our Services</h3>
+                        <h3 class="sidebar-title">Service Categories</h3>
                         <div class="category-list">
-                            <div class="category-item">
+                            <div class="category-item active" data-category="web-development">
                                 <i class="fas fa-laptop-code"></i>
-                                <span>Frontend Development</span>
+                                <span>Web Development</span>
                             </div>
-                            <div class="category-item">
-                                <i class="fas fa-server"></i>
-                                <span>Backend Development</span>
+                            <div class="category-item" data-category="digital-marketing">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Digital Marketing</span>
                             </div>
-                            <div class="category-item">
-                                <i class="fas fa-layer-group"></i>
-                                <span>Full Stack Development</span>
+                            <div class="category-item" data-category="saas-development">
+                                <i class="fas fa-cloud"></i>
+                                <span>SaaS Development</span>
                             </div>
+                            <div class="category-item" data-category="consulting">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>IT Consulting</span>
                         </div>
                     </div>
                     
-                    <div class="services-carousel">
-                        <div class="service-card">
+                    </div>
+                    
+                    <div class="services-main">
+                        <div class="services-grid" id="services-grid">
+                            <div class="service-card" data-category="web-development">
                             <div class="service-image">
-                                <div class="service-banner">
-                                    <span class="service-text">Project Planning</span>
-                                    <h3>Project Planning</h3>
+                                    <div class="service-banner frontend-bg">
+                                        <span class="service-text">Frontend Development</span>
+                                        <h3>Frontend Development</h3>
                                 </div>
                             </div>
                             <div class="service-content">
-                                <p>Detailed planning and strategizing for successful project execution from concept to launch.</p>
+                                    <p>Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> React.js Development</li>
+                                        <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                                        <li><i class="fas fa-check"></i> UI/UX Implementation</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳15,000</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <div class="service-card" data-category="web-development">
                             <div class="service-image">
-                                <div class="service-banner bug-fix-bg">
-                                    <span class="service-text">Bug Fixing & Feature Additions</span>
-                                    <h3>Bug Fixing & Feature Additions</h3>
+                                    <div class="service-banner backend-bg">
+                                        <span class="service-text">Backend Development</span>
+                                        <h3>Backend Development</h3>
                                 </div>
                             </div>
                             <div class="service-content">
-                                <p>Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
+                                    <p>Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Node.js & Express.js</li>
+                                        <li><i class="fas fa-check"></i> PHP Development</li>
+                                        <li><i class="fas fa-check"></i> RESTful APIs</li>
+                                        <li><i class="fas fa-check"></i> Database Integration</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳20,000</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <div class="service-card" data-category="web-development">
                             <div class="service-image">
-                                <div class="service-banner backend-bg">
-                                    <span class="service-text">Backend Development</span>
-                                    <h3>Backend Development</h3>
+                                    <div class="service-banner website-bg">
+                                        <span class="service-text">Website Development</span>
+                                        <h3>Website Development</h3>
                                 </div>
                             </div>
                             <div class="service-content">
-                                <p>Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
+                                    <p>Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> WordPress Development</li>
+                                        <li><i class="fas fa-check"></i> Custom Web Applications</li>
+                                        <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳25,000</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <div class="service-card" data-category="web-development">
                             <div class="service-image">
-                                <div class="service-banner frontend-bg">
-                                    <span class="service-text">Frontend Development</span>
-                                    <h3>Frontend Development</h3>
+                                    <div class="service-banner mern-bg">
+                                        <span class="service-text">MERN Stack Development</span>
+                                        <h3>MERN Stack Development</h3>
                                 </div>
                             </div>
                             <div class="service-content">
-                                <p>Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
+                                    <p>Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Full-Stack Applications</li>
+                                        <li><i class="fas fa-check"></i> Real-time Features</li>
+                                        <li><i class="fas fa-check"></i> Scalable Architecture</li>
+                                        <li><i class="fas fa-check"></i> Modern UI/UX</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳35,000</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <!-- Digital Marketing Services -->
+                            <div class="service-card" data-category="digital-marketing">
                             <div class="service-image">
-                                <div class="service-banner website-bg">
-                                    <span class="service-text">Website Development</span>
-                                    <h3>Website Development</h3>
+                                    <div class="service-banner marketing-bg">
+                                        <span class="service-text">Digital Marketing</span>
+                                        <h3>Digital Marketing</h3>
                                 </div>
                             </div>
                             <div class="service-content">
-                                <p>Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
+                                    <p>Comprehensive digital marketing strategies to boost your online presence and drive business growth.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> SEO & SEM</li>
+                                        <li><i class="fas fa-check"></i> Social Media Marketing</li>
+                                        <li><i class="fas fa-check"></i> Google Ads</li>
+                                        <li><i class="fas fa-check"></i> Content Marketing</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳10,000/month</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <div class="service-card" data-category="digital-marketing">
                             <div class="service-image">
-                                <div class="service-banner mern-bg">
-                                    <span class="service-text">Web App Development (MERN)</span>
-                                    <h3>Web App Development (MERN)</h3>
+                                    <div class="service-banner tools-bg">
+                                        <span class="service-text">Analytics Setup</span>
+                                        <h3>Analytics & Tracking</h3>
                                 </div>
                             </div>
                             <div class="service-content">
-                                <p>Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
+                                    <p>Setting up comprehensive analytics and tracking systems to monitor your digital performance.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Google Analytics</li>
+                                        <li><i class="fas fa-check"></i> Facebook Pixel</li>
+                                        <li><i class="fas fa-check"></i> Google Tag Manager</li>
+                                        <li><i class="fas fa-check"></i> Conversion Tracking</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳5,000</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <!-- SaaS Development Services -->
+                            <div class="service-card" data-category="saas-development">
                             <div class="service-image">
                                 <div class="service-banner saas-bg">
                                     <span class="service-text">SaaS Development</span>
@@ -491,10 +536,17 @@
                             </div>
                             <div class="service-content">
                                 <p>Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Multi-tenant Architecture</li>
+                                        <li><i class="fas fa-check"></i> Subscription Management</li>
+                                        <li><i class="fas fa-check"></i> API Development</li>
+                                        <li><i class="fas fa-check"></i> Cloud Integration</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳50,000</div>
                             </div>
                         </div>
                         
-                        <div class="service-card">
+                            <div class="service-card" data-category="saas-development">
                             <div class="service-image">
                                 <div class="service-banner whmcs-bg">
                                     <span class="service-text">WHMCS Development</span>
@@ -503,6 +555,53 @@
                             </div>
                             <div class="service-content">
                                 <p>Customizing and extending WHMCS for billing, client management, and automation.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Custom Modules</li>
+                                        <li><i class="fas fa-check"></i> Payment Gateway Integration</li>
+                                        <li><i class="fas fa-check"></i> Automation Scripts</li>
+                                        <li><i class="fas fa-check"></i> Custom Themes</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳30,000</div>
+                            </div>
+                        </div>
+                            
+                            <!-- IT Consulting Services -->
+                            <div class="service-card" data-category="consulting">
+                                <div class="service-image">
+                                    <div class="service-banner bug-fix-bg">
+                                        <span class="service-text">Project Planning</span>
+                                        <h3>Project Planning</h3>
+                                    </div>
+                                </div>
+                                <div class="service-content">
+                                    <p>Detailed planning and strategizing for successful project execution from concept to launch.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Technical Architecture</li>
+                                        <li><i class="fas fa-check"></i> Project Roadmap</li>
+                                        <li><i class="fas fa-check"></i> Resource Planning</li>
+                                        <li><i class="fas fa-check"></i> Risk Assessment</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳8,000</div>
+                                </div>
+                            </div>
+                            
+                            <div class="service-card" data-category="consulting">
+                                <div class="service-image">
+                                    <div class="service-banner database-bg">
+                                        <span class="service-text">Bug Fixing & Maintenance</span>
+                                        <h3>Bug Fixing & Maintenance</h3>
+                                    </div>
+                                </div>
+                                <div class="service-content">
+                                    <p>Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
+                                    <ul class="service-features">
+                                        <li><i class="fas fa-check"></i> Code Debugging</li>
+                                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                                        <li><i class="fas fa-check"></i> Security Updates</li>
+                                        <li><i class="fas fa-check"></i> Feature Enhancements</li>
+                                    </ul>
+                                    <div class="service-price">Starting from ৳5,000</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -513,22 +612,142 @@
         <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
+                <div class="section-header">
+                    <h2>About Rubidsoft</h2>
+                    <p>Empowering businesses through innovative technology solutions and exceptional digital experiences</p>
+                </div>
+                
                 <div class="about-content">
+                    <div class="about-main">
                     <div class="about-text">
-                        <h2>About Us</h2>
-                        <p>We are a team of passionate developers and designers dedicated to creating exceptional web experiences. With years of experience in the industry, we understand what makes a website successful.</p>
-                        <p>Our mission is to help businesses establish a strong online presence through innovative web solutions that drive results.</p>
+                            <h3>Our Story</h3>
+                            <p>Founded by <strong>Hobayer Golondaz Tushar</strong>, Rubidsoft emerged from a vision to bridge the gap between traditional business practices and modern digital solutions. We are a comprehensive IT services company dedicated to transforming businesses through innovative technology.</p>
+                            <p>Our mission is to empower businesses of all sizes with cutting-edge web development, digital marketing, and technology solutions that drive growth and success in the digital age.</p>
+                            
+                            <div class="about-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-rocket"></i>
+                                    <div class="feature-content">
+                                        <h4>Innovation First</h4>
+                                        <p>We stay ahead of technology trends to deliver cutting-edge solutions</p>
                     </div>
-                    <div class="ceo-message">
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <div class="feature-content">
+                                        <h4>Client-Centric</h4>
+                                        <p>Your success is our priority - we tailor solutions to your unique needs</p>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div class="feature-content">
+                                        <h4>Quality Assured</h4>
+                                        <p>Rigorous testing and quality control ensure exceptional results</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="company-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="3">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="25">0</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="100">0</div>
+                                <div class="stat-label">Success Rate %</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="ceo-showcase">
+                        <div class="ceo-card">
                         <div class="ceo-avatar">
                             <img src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz Tushar - CEO" class="ceo-photo">
+                                <div class="ceo-badge">
+                                    <i class="fas fa-crown"></i>
+                                </div>
                         </div>
                         <div class="ceo-info">
                             <h3>Hobayer Golondaz Tushar</h3>
-                            <p class="ceo-title">Founder and CEO at Rubidsoft</p>
+                                <p class="ceo-title">Founder & CEO</p>
+                                <div class="ceo-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ceo-message">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
                             <blockquote>
-                                "We believe that every business deserves a website that not only looks great but also performs exceptionally. Our commitment to quality and innovation sets us apart in the industry."
+                                "We believe that every business deserves a digital presence that not only looks exceptional but also performs flawlessly. Our commitment to innovation, quality, and client success drives everything we do at Rubidsoft."
                             </blockquote>
+                            <div class="quote-author">
+                                <span class="author-name">Hobayer Golondaz Tushar</span>
+                                <span class="author-title">Founder & CEO, Rubidsoft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-preview">
+                    <h3>Meet Our Team</h3>
+                    <p>Talented professionals dedicated to delivering excellence</p>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <img src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz Tushar">
+                            </div>
+                            <div class="member-info">
+                                <h4>Hobayer Golondaz Tushar</h4>
+                                <p>Founder & CEO</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Leadership</span>
+                                    <span class="skill-tag">Strategy</span>
+                                    <span class="skill-tag">Innovation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>Development Team</h4>
+                                <p>Expert Developers</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">Web Development</span>
+                                    <span class="skill-tag">Mobile Apps</span>
+                                    <span class="skill-tag">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="member-info">
+                                <h4>Marketing Team</h4>
+                                <p>Digital Marketing Experts</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">Social Media</span>
+                                    <span class="skill-tag">Analytics</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -642,48 +861,221 @@
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Contact Us</h2>
-                    <p>Get in touch with us for your next web project</p>
+                    <h2>Get In Touch</h2>
+                    <p>Ready to start your next project? Let's discuss how we can help bring your ideas to life with our comprehensive IT solutions.</p>
                 </div>
+                
                 <div class="contact-content">
-                    <div class="contact-form">
-                        <form>
+                    <div class="contact-form-container">
+                        <div class="contact-form-header">
+                            <h3>Send us a Message</h3>
+                            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                        </div>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
                             <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                                    <span class="form-error"></span>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                                    <span class="form-error"></span>
+                            </div>
+                            </div>
+                            
+                            <div class="form-row">
+                            <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                                    <span class="form-error"></span>
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="Subject" required>
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                                    <span class="form-error"></span>
                             </div>
+                            </div>
+                            
                             <div class="form-group">
-                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
                             </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="frontend">Frontend Development</option>
+                                    <option value="backend">Backend Development</option>
+                                    <option value="fullstack">Full Stack Development</option>
+                                    <option value="website">Website Development</option>
+                                    <option value="mern">MERN Stack Development</option>
+                                    <option value="saas">SaaS Development</option>
+                                    <option value="whmcs">WHMCS Development</option>
+                                    <option value="maintenance">Bug Fixing & Maintenance</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-1000">Under $1,000</option>
+                                    <option value="1000-5000">$1,000 - $5,000</option>
+                                    <option value="5000-10000">$5,000 - $10,000</option>
+                                    <option value="10000-25000">$10,000 - $25,000</option>
+                                    <option value="25000-plus">$25,000+</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">Project Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="6-months-plus">6+ months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" placeholder="Tell us about your project requirements, goals, and any specific features you need..." rows="6" required></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our newsletter for updates and tech insights
+                                </label>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-of-service.html" target="_blank">Terms of Service</a> *
+                                </label>
+                                <span class="form-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
                         </form>
                     </div>
-                    <div class="contact-info">
-                        <div class="contact-item">
+                    
+                    <div class="contact-info-container">
+                        <div class="contact-info-header">
+                            <h3>Contact Information</h3>
+                            <p>Multiple ways to reach us</p>
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
                             <i class="fas fa-phone"></i>
-                            <div>
+                                </div>
+                                <div class="contact-details">
                                 <h4>Phone</h4>
                                 <p>+8801302855453</p>
+                                    <span class="contact-label">Available 24/7</span>
                             </div>
+                                <a href="tel:+8801302855453" class="contact-action">
+                                    <i class="fas fa-phone"></i>
+                                </a>
                         </div>
-                        <div class="contact-item">
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
-                            <div>
+                                </div>
+                                <div class="contact-details">
                                 <h4>Email</h4>
                                 <p>rubidsoft@gmail.com</p>
+                                    <span class="contact-label">Response within 24h</span>
+                            </div>
+                                <a href="mailto:rubidsoft@gmail.com" class="contact-action">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                        </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>138 KBI Road, Mymensingh</p>
+                                    <span class="contact-label">Bangladesh</span>
+                                </div>
+                                <a href="https://maps.google.com/?q=138+KBI+Road+Mymensingh+Bangladesh" target="_blank" class="contact-action">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                            <i class="fas fa-video"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Video Call</h4>
+                                <p>Schedule a meeting</p>
+                                    <span class="contact-label">Google Meet available</span>
+                            </div>
+                                <a href="#" class="contact-action" id="schedule-meeting">
+                                    <i class="fas fa-calendar"></i>
+                                </a>
+                        </div>
+                    </div>
+                        
+                        <div class="business-hours">
+                            <h4>Business Hours</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="day">Monday - Friday</span>
+                                    <span class="time">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Saturday</span>
+                                    <span class="time">10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Sunday</span>
+                                    <span class="time">Closed</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-video"></i>
-                            <div>
-                                <h4>Google Meet</h4>
-                                <p>Schedule a meeting</p>
-                                <a href="#" class="btn btn-secondary">Book Meeting</a>
+                        
+                        <div class="social-contact">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://facebook.com/rubidsoft" target="_blank" class="social-link facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/rubidsoft" target="_blank" class="social-link twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/rubidsoft" target="_blank" class="social-link linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://instagram.com/rubidsoft" target="_blank" class="social-link instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

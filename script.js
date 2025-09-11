@@ -114,26 +114,76 @@ function initTechCarousel() {
     });
 }
 
-// Services Carousel Navigation
-function initServicesCarousel() {
-    const prevBtn = document.querySelector('.prev-service');
-    const nextBtn = document.querySelector('.next-service');
-    const carousel = document.querySelector('.services-carousel');
+// Enhanced Services Grid with Category Filtering
+class EnhancedServicesGrid {
+    constructor() {
+        this.grid = document.querySelector('.services-grid');
+        this.cards = document.querySelectorAll('.service-card');
+        this.categoryItems = document.querySelectorAll('.category-item');
+        this.currentCategory = 'web-development';
+        
+        this.init();
+    }
     
-    if (prevBtn && nextBtn && carousel) {
-        prevBtn.addEventListener('click', () => {
-            carousel.scrollBy({
-                left: -350,
-                behavior: 'smooth'
-            });
+    init() {
+        if (!this.grid) return;
+        
+        this.bindEvents();
+        
+        // Initialize card indices for animations
+        this.cards.forEach((card, index) => {
+            card.style.setProperty('--card-index', index);
         });
         
-        nextBtn.addEventListener('click', () => {
-            carousel.scrollBy({
-                left: 350,
-                behavior: 'smooth'
+        // Show web development services by default
+        this.filterByCategory('web-development');
+    }
+    
+    bindEvents() {
+        // Category filtering
+        this.categoryItems.forEach(item => {
+            item.addEventListener('click', () => this.handleCategoryFilter(item));
+        });
+        
+        // Service card interactions
+        this.cards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                this.handleServiceClick(card, e);
             });
         });
+    }
+    
+    handleCategoryFilter(selectedItem) {
+        // Update active category
+        this.categoryItems.forEach(item => item.classList.remove('active'));
+        selectedItem.classList.add('active');
+
+        const category = selectedItem.getAttribute('data-category');
+        this.filterByCategory(category);
+    }
+    
+    filterByCategory(category) {
+        this.cards.forEach((card, index) => {
+            const cardCategory = card.getAttribute('data-category');
+            
+            if (cardCategory === category) {
+                card.style.display = 'block';
+                card.style.animation = `fadeInUp 0.5s ease ${index * 0.1}s both`;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    handleServiceClick(card, event) {
+        // Add click animation
+        card.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+            card.style.transform = 'scale(1)';
+        }, 150);
+
+        // You can add more interaction logic here
+        console.log('Service card clicked:', card.querySelector('h3').textContent);
     }
 }
 
@@ -480,15 +530,217 @@ function initInteractiveEffects() {
     });
 }
 
+// About Section Enhancer with animated counters
+class AboutSectionEnhancer {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        this.setupCounterAnimations();
+        this.setupScrollAnimations();
+    }
+
+    setupCounterAnimations() {
+        const counters = document.querySelectorAll('.stat-number');
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    this.animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+    }
+
+    animateCounter(element) {
+        const target = parseInt(element.getAttribute('data-count'));
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60fps
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            element.textContent = Math.floor(current);
+        }, 16);
+    }
+
+    setupScrollAnimations() {
+        const animatedElements = document.querySelectorAll('.feature-item, .team-member, .ceo-card');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const animationObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                    animationObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        animatedElements.forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            animationObserver.observe(element);
+        });
+    }
+}
+
+// Services Sidebar Sticky Enhancement
+class ServicesSidebarSticky {
+    constructor() {
+        this.sidebar = document.querySelector('.services-sidebar');
+        this.init();
+    }
+
+    init() {
+        if (!this.sidebar) return;
+        
+        this.setupStickyBehavior();
+        this.setupSmoothScrolling();
+        this.setupScrollIndicator();
+    }
+
+    setupStickyBehavior() {
+        // Add smooth scroll behavior to the page
+        document.documentElement.style.scrollBehavior = 'smooth';
+        
+        // Add scroll event listener for enhanced sticky behavior
+        let ticking = false;
+        
+        const updateStickyState = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                this.sidebar.classList.add('sticky-active');
+            } else {
+                this.sidebar.classList.remove('sticky-active');
+            }
+            
+            ticking = false;
+        };
+
+        const requestTick = () => {
+            if (!ticking) {
+                requestAnimationFrame(updateStickyState);
+                ticking = true;
+            }
+        };
+
+        window.addEventListener('scroll', requestTick, { passive: true });
+    }
+
+    setupSmoothScrolling() {
+        // Add smooth scrolling to category items
+        const categoryItems = document.querySelectorAll('.category-item');
+        
+        categoryItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Add active class with smooth transition
+                categoryItems.forEach(cat => cat.classList.remove('active'));
+                item.classList.add('active');
+                
+                // Smooth scroll to services section if not already visible
+                const servicesSection = document.querySelector('.services-main');
+                if (servicesSection) {
+                    const rect = servicesSection.getBoundingClientRect();
+                    if (rect.top > window.innerHeight || rect.bottom < 0) {
+                        servicesSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    }
+
+    setupScrollIndicator() {
+        // Add scroll progress indicator
+        const progressBar = document.createElement('div');
+        progressBar.className = 'sidebar-scroll-progress';
+        progressBar.innerHTML = '<div class="progress-fill"></div>';
+        
+        // Add styles for progress bar
+        const style = document.createElement('style');
+        style.textContent = `
+            .sidebar-scroll-progress {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: rgba(0,0,0,0.1);
+                border-radius: 4px 4px 0 0;
+                overflow: hidden;
+            }
+            
+            .progress-fill {
+                height: 100%;
+                background: linear-gradient(135deg, var(--blue-accent), #667eea);
+                width: 0%;
+                transition: width 0.3s ease;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        this.sidebar.appendChild(progressBar);
+        
+        // Update progress on scroll
+        const updateProgress = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            
+            const progressFill = progressBar.querySelector('.progress-fill');
+            if (progressFill) {
+                progressFill.style.width = `${Math.min(scrollPercent, 100)}%`;
+            }
+        };
+
+        window.addEventListener('scroll', updateProgress, { passive: true });
+    }
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     try {
         // Initialize carousel
         new Carousel();
         
+        // Initialize enhanced services grid
+        new EnhancedServicesGrid();
+        
+        // Initialize about section enhancer
+        new AboutSectionEnhancer();
+        
+        // Initialize services sidebar sticky behavior
+        new ServicesSidebarSticky();
+        
         // Initialize other functionality
         initSmoothScrolling();
-        initServicesCarousel();
         initTechCarousel();
         initScrollSpy();
         initMobileMenu();
